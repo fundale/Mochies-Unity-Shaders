@@ -80,6 +80,7 @@ namespace Mochie {
         MaterialProperty _AudioLinkEmission = null;
         MaterialProperty _AudioLinkEmissionStrength = null;
         MaterialProperty _AudioLinkEmissionMeta = null;
+        MaterialProperty _AudioLinkSmoothed = null;
         MaterialProperty _AudioLinkMin = null;
         MaterialProperty _AudioLinkMax = null;
 
@@ -580,6 +581,7 @@ namespace Mochie {
                         me.ShaderProperty(_AudioLinkEmissionStrength, Tips.audioLinkEmissionStrength);
                         MGUI.SliderMinMax(_AudioLinkMin, _AudioLinkMax, 0f, 2f, "Remap", 0);
                         me.ShaderProperty(_AudioLinkEmissionMeta, Tips.audioLinkEmissionMeta);
+                        me.ShaderProperty(_AudioLinkSmoothed, Tips.audioLinkSmoothed);
                     }
                     MGUI.Space4();
                     

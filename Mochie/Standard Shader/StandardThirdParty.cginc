@@ -94,6 +94,7 @@ void CalculateAreaLit(v2f i, InputData id, inout LightingData ld){
 #include "../Common/AudioLink.cginc"
 int _AudioLinkEmission;
 int _AudioLinkEmissionMeta;
+int _AudioLinkSmoothed;
 float _AudioLinkEmissionStrength;
 float _AudioLinkMin;
 float _AudioLinkMax;
@@ -107,6 +108,9 @@ struct audioLinkData {
 };
 
 float GetAudioLinkBand(audioLinkData al, int band){
+    if (_AudioLinkSmoothed)
+        return AudioLinkData(ALPASS_FILTEREDAUDIOLINK + uint2(15, band - 1)).r;
+    
     float4 bands = float4(al.bass, al.lowMid, al.upperMid, al.treble);
     return bands[band-1];
 }

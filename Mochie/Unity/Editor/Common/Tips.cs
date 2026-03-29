@@ -80,6 +80,7 @@ namespace Mochie {
         public static GUIContent audioLinkEmission = new GUIContent("Audio Link", "Audio link integration. For more info check out https://github.com/llealloo/vrc-udon-audio-link.");
         public static GUIContent audioLinkEmissionMeta = new GUIContent("Audio Link Meta Pass", "Apply Audio Link to the meta pass. Enable if you're using realtime GI, otherwise keep disabled.");
         public static GUIContent audioLinkEmissionStrength = new GUIContent("Audio Link Strength", "Strength of the audio link effect.");
+        public static GUIContent audioLinkSmoothed = new GUIContent("Audio Link Smoothed", "Apply small smoothing to the Audio Link intensity.");
         public static GUIContent emissPulseStrength = new GUIContent("Pulse Strength", "Strength of the pulsing effect");
         public static GUIContent emissPulseSpeed = new GUIContent("Pulse Speed", "Speed of the pulsing effect");
         public static GUIContent rimBlend = new GUIContent("Blending");

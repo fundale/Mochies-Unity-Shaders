@@ -61,6 +61,7 @@ Shader "Mochie/Standard Mobile" {
         [Enum(Off,0, Bass,1, Low Mids,2, Upper Mids,3, Highs,4)]_AudioLinkEmission("Emission Band", Int) = 0
         _AudioLinkEmissionStrength("Emission Strength", Float) = 1
         [ToggleUI]_AudioLinkEmissionMeta("Audio Link Meta Emission", Int) = 0
+        [ToggleUI]_AudioLinkSmoothed("Audio Link Smoothed", Int) = 0
         _AudioLinkMin("Audio Link Min", Float) = 0
         _AudioLinkMax("Audio Link Max", Float) = 1
 
